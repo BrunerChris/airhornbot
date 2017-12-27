@@ -278,7 +278,7 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	//KHALED,
 	CENA,
 	//ETHAN,
-	COW,
+	//COW,
 	BIRTHDAY,
 	//WOW,
 }
