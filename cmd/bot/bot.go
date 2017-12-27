@@ -77,6 +77,83 @@ type Sound struct {
 }
 
 // Array of all the sounds we have
+var FAMILYGUY *SoundCollection = &SoundCollection{
+	Prefix: "fg",
+	Commands: []string{
+		"!familyguy", "!fg"
+	},
+	Sounds: []*Sound{
+		createSound("coolwhip", 1, 500),
+		createSound("giggity", 1, 500),
+		createSound("ha", 1, 500),
+		createSound("hey", 1, 500),
+		createSound("sob", 1, 500),
+		createSound("hey_there", 1, 500),
+		createSound("itsgonrain", 1, 500),
+		createSound("wrongairport", 1, 500),
+		createSound("longface", 1, 500),
+		createSound("getbackhere", 1, 500),
+	},
+}
+
+var ANCHORMAN *SoundCollection = &SoundCollection{
+	Prefix: "anchorman",
+	Commands: []string{
+		"!anchorman",
+	},
+	Sounds: []*Sound{
+		createSound("afternoon_delight", 1, 500),
+		createSound("scotch", 1, 500),
+		createSound("iq", 1, 500),
+	},
+}
+
+var ELF *SoundCollection = &SoundCollection{
+	Prefix: "elf",
+	Commands: []string{
+		"!elf",
+	},
+	Sounds: []*Sound{
+		createSound("color", 1, 500),
+		createSound("smiling", 1, 500),
+	},
+}
+
+var HANGOVER *SoundCollection = &SoundCollection{
+	Prefix: "hangover",
+	Commands: []string{
+		"!hangover",
+		"!hg",
+	},
+	Sounds: []*Sound{
+		createSound("faggot", 1, 500),
+		createSound("toodaloo", 1, 500),
+	},
+}
+
+var SLJ *SoundCollection = &SoundCollection{
+	Prefix: "slj",
+	Commands: []string{
+		"!slj",
+		"!sam",
+	},
+	Sounds: []*Sound{
+		createSound("saywhat", 1, 500),
+		createSound("motherfucker", 1, 500),
+	},
+}
+
+var LEEROY *SoundCollection = &SoundCollection{
+	Prefix: "leeroy",
+	Commands: []string{
+		"!leeroy",
+		"!leeroyjenkins",
+	},
+	Sounds: []*Sound{
+		createSound("default", 1000, 250),
+	},
+}
+
 var AIRHORN *SoundCollection = &SoundCollection{
 	Prefix: "airhorn",
 	Commands: []string{
@@ -100,7 +177,7 @@ var AIRHORN *SoundCollection = &SoundCollection{
 	},
 }
 
-var KHALED *SoundCollection = &SoundCollection{
+/*var KHALED *SoundCollection = &SoundCollection{
 	Prefix:    "another",
 	ChainWith: AIRHORN,
 	Commands: []string{
@@ -112,7 +189,7 @@ var KHALED *SoundCollection = &SoundCollection{
 		createSound("one_classic", 1, 250),
 		createSound("one_echo", 1, 250),
 	},
-}
+}*/
 
 var CENA *SoundCollection = &SoundCollection{
 	Prefix: "jc",
@@ -130,7 +207,7 @@ var CENA *SoundCollection = &SoundCollection{
 	},
 }
 
-var ETHAN *SoundCollection = &SoundCollection{
+/*var ETHAN *SoundCollection = &SoundCollection{
 	Prefix: "ethan",
 	Commands: []string{
 		"!ethan",
@@ -164,7 +241,7 @@ var COW *SoundCollection = &SoundCollection{
 		createSound("moo", 10, 250),
 		createSound("x3", 1, 250),
 	},
-}
+}*/
 
 var BIRTHDAY *SoundCollection = &SoundCollection{
 	Prefix: "birthday",
@@ -180,7 +257,7 @@ var BIRTHDAY *SoundCollection = &SoundCollection{
 	},
 }
 
-var WOW *SoundCollection = &SoundCollection{
+/*var WOW *SoundCollection = &SoundCollection{
 	Prefix: "wow",
 	Commands: []string{
 		"!wowthatscool",
@@ -189,16 +266,21 @@ var WOW *SoundCollection = &SoundCollection{
 	Sounds: []*Sound{
 		createSound("thatscool", 50, 250),
 	},
-}
+}*/
 
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
+	FAMILYGUY,
+	ANCHORMAN,
+	ELF,
+	SLJ,
+	LEEROY,
 	AIRHORN,
-	KHALED,
+	//KHALED,
 	CENA,
-	ETHAN,
+	//ETHAN,
 	COW,
 	BIRTHDAY,
-	WOW,
+	//WOW,
 }
 
 // Create a Sound struct
