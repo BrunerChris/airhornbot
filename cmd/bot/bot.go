@@ -80,8 +80,7 @@ type Sound struct {
 var FAMILYGUY *SoundCollection = &SoundCollection{
 	Prefix: "fg",
 	Commands: []string{
-		"!familyguy", 
-		"!fg",
+		"!familyguy",
 	},
 	Sounds: []*Sound{
 		createSound("coolwhip", 1, 500),
